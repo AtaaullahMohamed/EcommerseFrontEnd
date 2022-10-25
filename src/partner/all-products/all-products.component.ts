@@ -106,7 +106,7 @@ getAllCategories(){
 }
 GetAllProducts()
 {
-  this.http.get<IProductResponse>('http://localhost:5092/api/Product/PartnerProductsBySubCategory/'+this.selectedCategoryId).subscribe(
+  this.http.get<IProductResponse>('http://localhost:5092/api/Product/PartnerProductsBySubCategory/'+this.selectedSubCategoryId).subscribe(
     data=>{
       console.log(data);
       this.productList = data.data as IShowProduct[];
